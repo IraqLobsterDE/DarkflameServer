@@ -698,6 +698,8 @@ CppScripts::Script* CppScripts::GetScript(Entity* parent, const std::string& scr
 		script = new NtDukeServer();
 	else if (scriptName == "scripts\\02_server\\Map\\NT\\L_NT_HAEL_SERVER.lua")
 		script = new NtHaelServer();
+	else if (scriptName == "scripts\\02_server\\Map\\NT\\L_NT_FACTION_SPY_SERVER.lua")
+		script = new NtFactionSpyServer();
 	else if (scriptName == "scripts\\02_server\\Map\\NT\\L_NT_OVERBUILD_SERVER.lua")
 		script = new NtOverbuildServer();
 	else if (scriptName == "scripts\\02_server\\Map\\NT\\L_NT_VANDA_SERVER.lua")
