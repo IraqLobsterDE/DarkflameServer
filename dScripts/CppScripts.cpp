@@ -209,6 +209,7 @@
 #include "NtXRayServer.h"
 #include "NtSleepingGuard.h"
 #include "NtImagimeterVisibility.h"
+#include "FrictionVolumeServer.h"
 
 // DLU Scripts
 #include "DLUVanityNPC.h"
@@ -700,6 +701,8 @@ CppScripts::Script* CppScripts::GetScript(Entity* parent, const std::string& scr
 		script = new NtVandaServer();
 	else if (scriptName == "scripts\\02_server\\Map\\General\\L_FORCE_VOLUME_SERVER.lua")
 		script = new ForceVolumeServer();
+	else if (scriptName == "scripts\\02_server\\Map\\General\\L_FRICTION_VOLUME_SERVER.lua")
+		script = new FrictionVolumeServer();
 	else if (scriptName == "scripts\\02_server\\Map\\NT\\L_NT_XRAY_SERVER.lua")
 		script = new NtXRayServer();
 	else if (scriptName == "scripts\\02_server\\Map\\NT\\L_NT_SLEEPING_GUARD.lua")

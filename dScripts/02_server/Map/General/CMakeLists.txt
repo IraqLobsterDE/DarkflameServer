@@ -3,6 +3,7 @@ set(DSCRIPTS_SOURCES_02_SERVER_MAP_GENERAL
 	"BaseInteractDropLootServer.cpp"
 	"Binoculars.cpp"
 	"ExplodingAsset.cpp"
+	"FrictionVolumeServer.cpp"
 	"ForceVolumeServer.cpp"
 	"GrowingFlower.cpp"
 	"ImaginationBackpackHealServer.cpp"
