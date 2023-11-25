@@ -210,6 +210,8 @@
 #include "NtSleepingGuard.h"
 #include "NtImagimeterVisibility.h"
 #include "FrictionVolumeServer.h"
+#include "NTPipeVisibilityServer.h"
+#include "NTNaomiDirtServer.h"
 
 // DLU Scripts
 #include "DLUVanityNPC.h"
@@ -312,6 +314,7 @@
 #include "WildNinjaStudent.h"
 #include "WildNinjaSensei.h"
 #include "WildNinjaBricks.h"
+#include "VisToggleNotifierServer.h"
 
 namespace {
 	InvalidScript* invalidToReturn = new InvalidScript();
@@ -707,9 +710,12 @@ CppScripts::Script* CppScripts::GetScript(Entity* parent, const std::string& scr
 		script = new NtXRayServer();
 	else if (scriptName == "scripts\\02_server\\Map\\NT\\L_NT_SLEEPING_GUARD.lua")
 		script = new NtSleepingGuard();
-	else if (scriptName == "scripts\\02_server\\Map\\NT\\L_NT_IMAGIMETER_VISIBILITY_SERVER.lua") {
+	else if (scriptName == "scripts\\02_server\\Map\\NT\\L_NT_IMAGIMETER_VISIBILITY_SERVER.lua")
 		script = new NTImagimeterVisibility();
-	}
+	else if (scriptName == "scripts\\02_server\\Map\\NT\\L_NT_PIPE_VISIBILITY_SERVER.lua")
+		script = new NTPipeVisibilityServer();
+	else if (scriptName == "scripts\\02_server\\Map\\NT\\L_NT_NAOMI_DIRT_SERVER.lua")
+		script = new NTNaomiDirtServer();
 
 	//AM:
 	else if (scriptName == "scripts\\02_server\\Map\\AM\\L_AM_CONSOLE_TELEPORT_SERVER.lua")

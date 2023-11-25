@@ -18,6 +18,8 @@ set(DSCRIPTS_SOURCES_02_SERVER_MAP_GENERAL
 	"StoryBoxInteractServer.cpp"
 	"TokenConsoleServer.cpp"
 	"TouchMissionUpdateServer.cpp"
+	"VisToggleNotifierServer.cpp"
+	"NTNaomiDirtServer.cpp"
 	"WishingWellServer.cpp")
 
 add_subdirectory(Ninjago)
